@@ -19,3 +19,5 @@ public class Student {
     public void setName(String name) { this.name = name; }
     public int getPRN() { return prn; }
     public void setPRN(int prn) { this.prn = prn; }
+    public String getBranch() { return branch; }
+    public void setBranch(String branch) { this.branch = branch; }
