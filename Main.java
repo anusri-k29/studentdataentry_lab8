@@ -67,3 +67,12 @@ public class Main {
                         float newCgpa = Float.parseFloat(scan.nextLine());
                         operations.updateStudent(updPrn, newName, newBranch, newBatch, newCgpa);
                         break;
+                    case 7:
+                        System.out.print("Enter PRN of Student to Delete: ");
+                        int delPrn = Integer.parseInt(scan.nextLine());
+                        operations.deleteStudent(delPrn);
+                        break;
+
+                    case 8:
+                        System.out.println("Exiting...");
+                        break;
