@@ -20,3 +20,13 @@ public class StudentOperations {
         students.add(student);
         System.out.println("Student added successfully.");
     }
+
+    public void displayStudents() {
+        if (students.isEmpty()) {
+            System.out.println("No students to display.");
+            return;
+        }
+        for (Student s : students) {
+            s.display();
+        }
+    }
