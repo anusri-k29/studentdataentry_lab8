@@ -54,4 +54,16 @@ public class Main {
                         int pos = Integer.parseInt(scan.nextLine());
                         operations.searchByPosition(pos);
                         break;
-
+                    case 6:
+                        System.out.print("Enter PRN of Student to Update: ");
+                        int updPrn = Integer.parseInt(scan.nextLine());
+                        System.out.print("Enter New Name: ");
+                        String newName = scan.nextLine();
+                        System.out.print("Enter New Branch: ");
+                        String newBranch = scan.nextLine();
+                        System.out.print("Enter New Batch: ");
+                        String newBatch = scan.nextLine();
+                        System.out.print("Enter New CGPA: ");
+                        float newCgpa = Float.parseFloat(scan.nextLine());
+                        operations.updateStudent(updPrn, newName, newBranch, newBatch, newCgpa);
+                        break;
