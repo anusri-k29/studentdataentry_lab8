@@ -7,3 +7,16 @@ public class StudentOperations {
     public StudentOperations() {
         students = new ArrayList<>();
     }
+    // Add student with duplicate check and CGPA validation
+    public void addStudent(Student student) throws DuplicatePRNException, InvalidCGPAException {
+        for (Student s : students) {
+            if (s.getPRN() == student.getPRN()) {
+                throw new DuplicatePRNException("PRN already exists.");
+            }
+        }
+        if (student.getCgpa() < 0.0 || student.getCgpa() > 10.0) {
+            throw new InvalidCGPAException("CGPA must be between 0.0 and 10.0.");
+        }
+        students.add(student);
+        System.out.println("Student added successfully.");
+    }
