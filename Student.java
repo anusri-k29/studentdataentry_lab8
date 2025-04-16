@@ -26,3 +26,7 @@ public class Student {
     
     public String getBatch() { return batch; }
     public void setBatch(String batch) { this.batch = batch; }
+
+    public float getCgpa() { return cgpa; }
+    public void setCgpa(float cgpa) { this.cgpa = cgpa; }
+
