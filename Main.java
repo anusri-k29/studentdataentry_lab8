@@ -43,4 +43,15 @@ public class Main {
                         int searchPrn = Integer.parseInt(scan.nextLine());
                         operations.searchByPRN(searchPrn);
                         break;
+                      case 4:
+                        System.out.print("Enter Name: ");
+                        String searchName = scan.nextLine();
+                        operations.searchByName(searchName);
+                        break;
+
+                    case 5:
+                        System.out.print("Enter Position: ");
+                        int pos = Integer.parseInt(scan.nextLine());
+                        operations.searchByPosition(pos);
+                        break;
 
