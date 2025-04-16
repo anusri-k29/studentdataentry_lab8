@@ -30,3 +30,25 @@ public class StudentOperations {
             s.display();
         }
     }
+    public void searchByPRN(int prn) throws StudentNotFoundException {
+        for (Student s : students) {
+            if (s.getPRN() == prn) {
+                s.display();
+                return;
+            }
+        }
+        throw new StudentNotFoundException("Student with PRN " + prn + " not found.");
+    }
+    public void deleteStudent(int prn) throws StudentNotFoundException {
+        Iterator<Student> iterator = students.iterator();
+        while (iterator.hasNext()) {
+            Student s = iterator.next();
+            if (s.getPRN() == prn) {
+                iterator.remove();
+                System.out.println("Student deleted successfully.");
+                return;
+            }
+        }
+        throw new StudentNotFoundException("Student with PRN " + prn + " not found.");
+    }
+}
