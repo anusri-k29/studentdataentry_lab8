@@ -29,4 +29,8 @@ public class Student {
 
     public float getCgpa() { return cgpa; }
     public void setCgpa(float cgpa) { this.cgpa = cgpa; }
-
+    
+    public void display() {
+        System.out.println("Name: " + name + ", PRN: " + prn + ", Branch: " + branch + ", Batch: " + batch + ", CGPA: " + cgpa);
+    }
+}
