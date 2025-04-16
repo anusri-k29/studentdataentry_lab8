@@ -14,3 +14,6 @@ public class Student {
         this.batch = batch;
         this.cgpa = cgpa;
     }
+    // Getters and setters
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
