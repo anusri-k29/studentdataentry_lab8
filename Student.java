@@ -17,3 +17,5 @@ public class Student {
     // Getters and setters
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
+    public int getPRN() { return prn; }
+    public void setPRN(int prn) { this.prn = prn; }
