@@ -76,3 +76,14 @@ public class Main {
                     case 8:
                         System.out.println("Exiting...");
                         break;
+                    default:
+                        System.out.println("Invalid choice!");
+                }
+            } catch (Exception e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+        } while (choice != 8);
+
+        scan.close();
+    }
+}
